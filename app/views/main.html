@@ -1,0 +1,17 @@
+<div class="container message-display">
+  <div ng-repeat="msg in main.messageList" class="row message-line">
+    <div class="message-box" ng-class="{'system':'system-msg','send':'pull-right','receive':'pull-left'}[msg.source]">
+    <span ng-bind-html="msg.content | toTrusted"></span></div>
+  </div>
+</div>
+{{main.peerID}}
+<p>{{main.peer.id}}</p>
+<button class="btn btn-primary" ng-click="main.generateID()">generate id</button>
+
+
+
+<input type="text" class="form-control" ng-model="main.mateId"/>
+<button class="btn btn-primary" ng-click="main.connectPeer(main.mateId)">连接</button>
+
+<div summernote ng-model="main.sendContent" config="main.summernoteConfig"></div>
+<button class="btn btn-primary pull-right" ng-click="main.sendMsg(main.sendContent)">发送</button>
