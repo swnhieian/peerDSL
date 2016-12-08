@@ -25,6 +25,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/server', {
+        templateUrl: 'views/server.html',
+        controller: 'ServerCtrl',
+        controllerAs: 'server'
+      })
       .otherwise({
         redirectTo: '/'
       });

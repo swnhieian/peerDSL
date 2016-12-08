@@ -1,3 +1,32 @@
+<div class="main">
+  <div class="main-inner row">
+    <div class="left-panel">
+      <div class="user-info">
+      </div>
+      <div class="peer-list">
+        <div class="peer-info media" ng-repeat="p in main.peerList" ng-click="main.connectPeer(p)" ng-class="p.id == main.activePeerId?'active':''">
+          <div class="media-left" href="#">
+            <i class="fa fa-user fa-4x"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="media-heading">{{p.id}}</h5>
+            {{p.status}}
+            <span ng-if="main.peerObj.id == p.id">我</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-area">
+      <div class="chat-head">{{main.activePeerId}}</div>
+      <div class="chat-message">{{main.activePeerId}}</div>
+      <div class="chat-operation"></div>
+      <div class="chat-input"></div>
+
+    </div>
+  </div>
+</div>
+
+
 <div class="container message-display">
   <div ng-repeat="msg in main.messageList" class="row message-line">
     <div class="message-box" ng-class="{'system':'system-msg','send':'pull-right','receive':'pull-left'}[msg.source]">
@@ -15,3 +44,4 @@
 
 <div summernote ng-model="main.sendContent" config="main.summernoteConfig"></div>
 <button class="btn btn-primary pull-right" ng-click="main.sendMsg(main.sendContent)">发送</button>
+<p ng-repeat="p in main.peerList">{{p.id}}</p>

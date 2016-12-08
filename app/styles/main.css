@@ -1,3 +1,51 @@
+body {
+  background-image: url('/images/background.jpg');
+}
+.main {
+  height: 600px;
+  background: white;
+}
+.left-panel {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+.main-inner {
+  height: 100%;
+}
+.peer-list {
+  background-color: #808080;
+  height:100%;
+}
+.peer-info {
+  padding: 10px;
+  color: white;
+}
+.peer-info i {
+  color: gainsboro;
+}
+.peer-list .peer-info {
+  list-style: none;
+  background-color: #808080;
+  border-bottom: 1px solid black;
+}
+.peer-info .active{
+  background-color: #202020;
+}
+.chat-area {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+.chat-area .chat-head {
+  text-align: center;
+  height: 30px;
+
+}
+
+
+
+
 .message-display {
   background-color: transparent;
   border: black 1px solid;

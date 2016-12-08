@@ -27,6 +27,7 @@ module.exports = function(config) {
       'bower_components/summernote/dist/summernote.js',
       'bower_components/angular-summernote/dist/angular-summernote.js',
       'bower_components/peerjs/peer.js',
+      'bower_components/lodash/lodash.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
