@@ -14,4 +14,7 @@ angular.module('peerDslApp')
       'AngularJS',
       'Karma'
     ];
+    var vm = this;
+    vm.peer = new Peer({host: 'shiweinan.imwork.net', port: 10000, path:'/myapp'});
+    console.log(vm.peer);
   });

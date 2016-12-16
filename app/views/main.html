@@ -1,4 +1,144 @@
 <div class="main">
+  <div class="sidebar">
+    <div class="card">
+      <div class="info">
+        <img src="images/1.jpg" alt="avatar" class="avatar">
+        <p class="name" ng-click="main.changeName()">{{main.peerName}}</p>
+      </div>
+      <div class="search-box">
+        <input type="text" class="search" placeholder="search...">
+      </div>
+      <div class="tabs">
+        <div class="tab-item active"><a href="#"><i class="fa fa-users"></i></a></div>
+        <div class="tab-item"><a href="#"><i class="fa fa-user"></i></a></div>
+        <div class="tab-item"><a href="#"><i class="fa fa-user"></i></a></div>
+      </div>
+    </div>
+    <div class="list">
+      <div class="active">
+        <div ng-repeat="p in main.activePeerList" ng-show="p.id != main.peerObj.id" class="user-info" ng-click="main.connectPeer(p.id)" ng-class="p.id == main.activePeerId?'active':''">
+          <img src="images/2.jpg" class="avatar">
+          <p class="name">{{p.name}}</p>
+          <span class="badge pull-right" ng-show="p.unread > 0">{{p.unread}}</span>
+        </div>
+      </div>
+      <div class="allUser" ng-if="false"></div>
+      <div class="broadcasting" ng-if="false"></div>
+
+    </div>
+  </div>
+  <div class="chat-area">
+    <div class="chat-wrapper">
+      <div class="chat-head">{{main.activePeer.name}}</div>
+      <div class="chat-message" scroll-glue>
+        <div class="message" ng-repeat="m in main.activePeer.message" ng-class="m.source">
+          <img src="images/2.jpg" class="avatar" ng-if="m.source != 'system'">
+          <p class="system" ng-if="m.type == 'system'">{{m.content}}</p>
+          <div class="text" ng-if="m.source != 'system'">
+            <img class="picture" src="{{m.content}}" ng-if="m.type =='picture'"/>
+            <div class="text" ng-if="m.type == 'text'">{{m.content}}</div>
+          </div>
+
+        </div>
+
+        <div class="myVideoContainer" ng-show="main.showMyVideo">
+          <videogular vg-theme="main.myVideoConfig.theme" vg-auto-play="true" vg-player-ready="main.myVideoMuted($API)">
+            <vg-media vg-src="main.myVideoConfig.sources"></vg-media>
+          </videogular>
+        </div>
+        <div class="peerVideoContainer" ng-show="main.showPeerVideo">
+          <videogular vg-theme="main.peerVideoConfig.theme" vg-auto-play="true">
+            <vg-media vg-src="main.peerVideoConfig.sources"></vg-media>
+            <vg-controls vg-autohide="true">
+              <vg-play-pause-button></vg-play-pause-button>
+              <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+              <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              </vg-scrub-bar>
+              <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+              <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+              </vg-volume>
+              <vg-fullscreen-button></vg-fullscreen-button>
+            </vg-controls>
+          </videogular>
+        </div>
+        <video src="{{main.onlineVideoURL}}" autoplay></video>
+        <div class="onlineVideoContainer" ng-show="true">
+          <videogular vg-theme="main.onlineVideoConfig.theme" vg-auto-play="true">
+            <vg-media vg-src="main.onlineVideoConfig.sources"></vg-media>
+            <vg-controls vg-autohide="true">
+              <vg-play-pause-button></vg-play-pause-button>
+              <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+              <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              </vg-scrub-bar>
+              <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+              <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+              </vg-volume>
+              <vg-fullscreen-button></vg-fullscreen-button>
+            </vg-controls>
+          </videogular>
+        </div>
+      </div>
+      <div class="chat-operation">
+        <span ng-click="main.videoChat()" ng-show="!main.showMyVideo">
+          <i class="fa fa-video-camera"></i>
+        </span>
+        <span ng-click="main.stopVideoChat()" ng-show="main.showMyVideo">
+          <i class="fa fa-stop"></i>
+        </span>
+        <file-reader file="main.pictureFile" upload-func="main.sendPicture(main.pictureFile)">
+          <i class="fa fa-photo"></i>
+        </file-reader>
+        <file-reader file="main.videoFile" upload-func="main.sendVideo(main.videoFile)">
+          <i class="fa fa-file-video-o"></i>
+        </file-reader>
+      </div>
+      <div class="chat-input">
+        <textarea ng-model="main.inputMessage"></textarea>
+        <div class="send pull-right">
+          <button ng-click="main.sendMessage()">send</button>
+        </div>
+      </div>
+    </div>
+    <div class="live-wrapper" ng-if="false"></div>
+  </div>
+</div>
+
+
+<script type="text/ng-template" id="changeNameModalContent.html">
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">设置用户名</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <input type="text" class="form-control" ng-model="vm.name">
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.ok()">确定</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.cancel()">取消</button>
+  </div>
+</script>
+<script type="text/ng-template" id="requestCallModalContent.html">
+  <div class="modal-header">
+    <h3 class="modal-title">连接确认</h3>
+  </div>
+  <div class="modal-body">
+    {{vm.name}}想和您建立视频通话，是否允许(可能会打断您现有的视频通话)？
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.ok()">允许</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.cancel()">拒绝</button>
+  </div>
+</script>
+
+
+
+<!--
+<div class="main2">
   <div class="main-inner row">
     <div class="left-panel">
       <div class="user-info">
@@ -19,8 +159,19 @@
     <div class="chat-area">
       <div class="chat-head">{{main.activePeerId}}</div>
       <div class="chat-message">{{main.activePeerId}}</div>
-      <div class="chat-operation"></div>
-      <div class="chat-input"></div>
+      <div class="chat-operation">
+        <span ng-click="main.videoChat()"><i class="fa fa-video-camera"></i></span>
+
+        <file-reader file="main.videoFile" upload-func="main.uploadVideo(main.videoFile)">
+          <i class="fa fa-file"></i>
+        </file-reader>
+        <a ng-click="main.startPlay()">show</a>
+      </div>
+      <div class="chat-input">
+    &lt;!&ndash;    <video class="playVideo" src="{{main.trustSrc(main.transferVideo)}}" autoplay></video>
+        <video class="myVideo" src="{{main.trustSrc(main.myVideoStream)}}" autoplay muted></video>
+        <video class="peerVideo" src="{{main.trustSrc(main.peerVideo)}}" autoplay></video>&ndash;&gt;
+      </div>
 
     </div>
   </div>
@@ -45,3 +196,4 @@
 <div summernote ng-model="main.sendContent" config="main.summernoteConfig"></div>
 <button class="btn btn-primary pull-right" ng-click="main.sendMsg(main.sendContent)">发送</button>
 <p ng-repeat="p in main.peerList">{{p.id}}</p>
+-->

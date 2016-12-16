@@ -9,7 +9,17 @@
     "summernote": "^0.8.2",
     "peerjs": "^0.3.14",
     "lodash": "^4.17.2",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "^4.7.0",
+    "ng-webworker": "^0.2.3",
+    "videogular": "^1.4.4",
+    "videogular-themes-default": "^1.4.4",
+    "videogular-controls": "^1.4.4",
+    "videogular-buffering": "^1.4.4",
+    "angular-ui-router": "ui-router#^0.3.2",
+    "angular-sanitize": "^1.6.0",
+    "ngstorage": "^0.3.11",
+    "angularjs-scroll-glue": "^0.0.1",
+    "angular-bootstrap": "^2.3.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

@@ -15,19 +15,44 @@ angular.module('peerDslApp')
       'Karma'
     ];
     var vm = this;
-    vm.peer = new Peer('iamserver', {key: 'ggp79a86cknpnwmi'});
+    //vm.peer = new Peer('iamserver', {key: 'ggp79a86cknpnwmi'});
+    vm.peer = new Peer('iamserver', {host: 'shiweinan.imwork.net', port: 10000, path:'/myapp'});
     vm.peerList = [];
+    vm.broadcast = function(data) {
+      console.log("broadcast", data);
+      _.forEach(vm.peerList, function(a) {
+        a.send(data);
+      });
+    };
+    vm.sendList = function(conn) {
+      var idList = [];
+      for (var i = 0; i < vm.peerList.length; i++) {
+        idList.push({id: vm.peerList[i].peer, name:vm.peerList[i].name});
+      }
+      $timeout(function() {conn.send({type:'peerList', data: idList});}, 10);
+      console.log('sendList',idList);
+    };
     vm.peer.on('connection', function(conn) {
-      vm.peerList.push(conn);
-      vm.sendIdList();
-      console.log('send');
-      console.log(vm.peerList);
+      conn.name = conn.peer;
+      //vm.sendList(conn);
+      vm.broadcast({type: 'newPeer', data: {id: conn.peer, name: conn.peer}});
+      $timeout(function() {vm.peerList.push(conn);});
+      //_.forEach(vm.peerList, function(c) {vm.sendList(c);});
+      //vm.sendIdList();
+      //console.log('send');
+      //console.log(vm.peerList);
       conn.on('close', function() {
         console.log('closed', this.id);
-         var removedId = this.id;
+        vm.broadcast({type:'closePeer', data: {id: this.peer}});
+        /* var removedId = this.id;
         _.remove(vm.peerList, function(p) { return p.id == removedId;});
-        vm.sendIdList();
-      });/*
+        vm.sendIdList();*/
+      });
+      conn.on('data', function(data) {
+        console.log('get data', data);
+        vm.process(data, this);
+      });
+      /*
       $timeout(function() {
         vm.peerList.push(conn);
         conn.on('close', function() {
@@ -37,16 +62,34 @@ angular.module('peerDslApp')
         vm.sendIdList();
       });*/
     });
+    vm.process = function(data, conn) {
+      $timeout(function() {
+        switch(data.type) {
+          case 'peerList':
+            vm.sendList(conn);
+            break;
+          case 'changeName':
+            vm.broadcast({type:'changeName',data: {id: conn.peer, name:data.data}});
+            _.forEach(vm.peerList, function(p) {
+              if (p.peer == conn.peer) p.name = data.data;
+            });
+            break;
+          default:
+            break;
+        }
+
+      });
+    };
     vm.sendIdList = function() {
       $timeout(function() {
         var idList = [];
         for (var i = 0; i < vm.peerList.length; i++) {
-          idList.push({id: vm.peerList[i].peer});
+          idList.push({id: vm.peerList[i].peer, name:vm.peerList[i].name});
         }
         for (var i = 0; i < vm.peerList.length; i++) {
           vm.peerList[i].send(JSON.stringify(idList));
         }
-      }, 1000);
+      });
     }
 
 
