@@ -29,6 +29,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       }, function(){ console.log('get video stream error'); });
     };
     vm.init = function() {
+      vm.functionList = 'active';
       vm.errorHandler = function() {
         var msg = '';
         switch (e.code) {
@@ -256,11 +257,21 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
               if (p.id == data.data.id) p.name = data.data.name;
             });
             break;
+          case 'newConference':
+            vm.activeConfList.push(data.data);
+console.log(vm.activeConfList);
+            break;
+          case 'confList':
+            vm.activeConfList = _.concat(data.data, vm.activeConfList);
+            break;
           default:
             break;
         }
         ;
       });
+    };
+    vm.changeFunction = function(fun) {
+      vm.functionList = fun;
     };
     vm.connectPeer = function(peerId) {
       if (vm.activePeerId == peerId) return;
@@ -671,15 +682,21 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
           console.log('conferenceVideos', vm.conferenceVideos);
         });
       };
+      vm.activeConfList = [];
+      vm.serverConn.send({'type': 'confList'});
     };
     vm.initConference();
     vm.openConferenceRoom = function() {
-      vm.RMConnection.open('i', function() {
+      vm.RMConnection.open(vm.peerId, function() {
+        vm.serverConn.send({type: 'newConference', id: vm.peerId, name: vm.peerName});
         console.log('getttt', vm.RMConnection.sessionid);
       });
     };
-    vm.joinConferenceRoom = function() {
-      vm.RMConnection.join('i');
+    vm.joinConferenceRoom = function(id) {
+      if (id == vm.peerId) return;
+      vm.conferenceVideos = [];
+      vm.RMConnection.join(id);
+      vm.activeConfrenceId = id;
     };
 
 

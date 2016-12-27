@@ -20,7 +20,8 @@
     "angular-bootstrap": "^2.3.1",
     "videogular-overlay-play": "^1.4.4",
     "ngvideo": "^1.0.2",
-    "angular-ui-router": "0.3.1"
+    "angular-ui-router": "0.3.1",
+    "angular-slimscroll-aiska": "angular-slimScroll#*"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

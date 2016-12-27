@@ -99,7 +99,8 @@ input.search {
   color: #3caf36;
 }
 .main .sidebar .list {
-
+  overflow-y: scroll;
+  max-height: 460px;
 }
 .main .sidebar .list .user-info.active {
   /*background-color: hsla(0, 0%, 100%, .1);*/

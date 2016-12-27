@@ -259,6 +259,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
             break;
           case 'newConference':
             vm.activeConfList.push(data.data);
+console.log(vm.activeConfList);
             break;
           case 'confList':
             vm.activeConfList = _.concat(data.data, vm.activeConfList);
@@ -686,8 +687,8 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
     };
     vm.initConference();
     vm.openConferenceRoom = function() {
-      vm.RMConnection.open(vm.peerID, function() {
-        vm.serverConn.send({type: 'newConference', id: vm.peerID, name: vm.peerName});
+      vm.RMConnection.open(vm.peerId, function() {
+        vm.serverConn.send({type: 'newConference', id: vm.peerId, name: vm.peerName});
         console.log('getttt', vm.RMConnection.sessionid);
       });
     };

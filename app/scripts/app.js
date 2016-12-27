@@ -20,7 +20,8 @@ angular
     "luegg.directives",
     "ui.bootstrap",
     "ui.router",
-    'ngVideo'
+    'ngVideo',
+    "ngSlimScroll"
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
