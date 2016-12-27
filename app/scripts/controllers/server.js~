@@ -9,7 +9,7 @@
  */
 //angular.module('peerDslApp')
 //  .controller('ServerCtrl', function ($timeout) {
-var ServerCtrl = function($timeout) {
+ServerCtrl = function($timeout) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
