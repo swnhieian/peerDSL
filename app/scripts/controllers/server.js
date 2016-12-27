@@ -91,12 +91,21 @@ var ServerCtrl = function($timeout) {
           case 'confList':
             vm.sendConfList(conn);
             break;
+          case 'closeConference':
+            _.remove(vm.confList, function(c) {
+              return c.id == data.id;
+            });
+            vm.broadcast({type:'closeConference', data: {id: data.id}});
+            break;
           default:
             break;
         }
 
       });
     };
+    vm.over = function() {
+      vm.broadcast({type:'presentOver'})
+    }
     vm.sendIdList = function() {
       $timeout(function() {
         var idList = [];
