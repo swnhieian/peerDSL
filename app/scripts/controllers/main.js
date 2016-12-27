@@ -27,8 +27,31 @@ angular.module('peerDslApp')
         });
       }, function(){ console.log('get video stream error'); });
     };
-    vm.flag = false;
     vm.init = function() {
+      vm.errorHandler = function() {
+        var msg = '';
+        switch (e.code) {
+          case FileError.QUOTA_EXCEEDED_ERR:
+            msg = 'QUOTA_EXCEEDED_ERR';
+            break;
+          case FileError.NOT_FOUND_ERR:
+            msg = 'NOT_FOUND_ERR';
+            break;
+          case FileError.SECURITY_ERR:
+            msg = 'SECURITY_ERR';
+            break;
+          case FileError.INVALID_MODIFICATION_ERR:
+            msg = 'INVALID_MODIFICATION_ERR';
+            break;
+          case FileError.INVALID_STATE_ERR:
+            msg = 'INVALID_STATE_ERR';
+            break;
+          default:
+            msg = 'Unknown Error';
+            break;
+        };
+        console.log('Error: ' + msg);
+      } ;
       /*if ($localStorage.peerId) {
         vm.peerObj = new Peer($localStorage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
       } else {*/
@@ -52,31 +75,70 @@ angular.module('peerDslApp')
       vm.peerObj.on('connection', function(conn) {
         console.log('connected by:',conn.peer);
         conn.on('data', function(data) {
-          if (data.type == 'video' && !vm.flag) {
-            vm.flag = true;
-            var url = $sce.trustAsResourceUrl(URL.createObjectURL(new Blob([data.content])));
-            console.log(url);
-            $scope.$apply(vm.onlineVideoURL = url);
-            vm.onlineVideoConfig = {
-              theme: 'bower_components/videogular-themes-default/videogular.css',
-              sources: [
-                {src: $sce.trustAsResourceUrl(url), type: 'video/mp4'}
-              ]
-            };
-          } else {return;}
           console.log(data);
           var thisPeer = _.find(vm.activePeerList, function(p) {return p.id == conn.peer});
-          if (vm.activePeerId != conn.peer) {
-            _.remove(vm.activePeerList, function(p) { return p.id == conn.peer;})
-            thisPeer.unread = thisPeer.unread || 0;
-            thisPeer.unread++;
-            if (!vm.activePeerId) vm.activePeerList.splice(0, 0, thisPeer);
-            else vm.activePeerList.splice(0, 0, thisPeer);
+          if (data.type == 'video') {
+            var requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
+            requestFileSystem(window.TEMPORARY, 500*1024*1024 /*500MB*/, function(fs) {
+              console.log(fs);
+              fs.root.getFile(data.name, {create: true}, function(fileEntry) {
+                fileEntry.createWriter(function(fileWriter) {
+                  fileWriter.onwriteend = function(e) {
+                    console.log('write completed.', data.name);
+                    if (data.index == 0) {
+                      var video = {type:'video', sources: [{src:fileEntry.toURL(),type:'video/mp4'}], source: 'peer',index:data.index,length:data.length};
+                      if (vm.activePeerId != conn.peer) {
+                        _.remove(vm.activePeerList, function (p) {
+                          return p.id == conn.peer;
+                        });
+                        thisPeer.unread = thisPeer.unread || 0;
+                        thisPeer.unread++;
+                        if (!vm.activePeerId) vm.activePeerList.splice(0, 0, thisPeer);
+                        else vm.activePeerList.splice(0, 0, thisPeer);
+                      }
+                      $timeout(function() {
+                        console.log(video);
+                        thisPeer.message = thisPeer.message || [];
+                        thisPeer.message.push(video);
+                      });
+                    } else {
+
+                    }
+                  };
+                  fileWriter.onerror = function(e) {
+                    console.log('write failed:' + e.toString());
+                  };
+                  var bb = new Blob([data.content]);
+                  fileWriter.write(bb);
+                }, vm.errorHandler);
+              }, vm.errorHandler);
+            }, vm.errorHandler);
+
+              /*vm.flag = true;
+              var url = $sce.trustAsResourceUrl(URL.createObjectURL(new Blob([data.content])));
+              console.log(url);
+              $scope.$apply(vm.onlineVideoURL = url);
+              vm.onlineVideoConfig = {
+                theme: 'bower_components/videogular-themes-default/videogular.css',
+                sources: [
+                  {src: url, type: 'video/mp4'}
+                ]
+              };*/
+          } else {
+            if (vm.activePeerId != conn.peer) {
+              _.remove(vm.activePeerList, function (p) {
+                return p.id == conn.peer;
+              })
+              thisPeer.unread = thisPeer.unread || 0;
+              thisPeer.unread++;
+              if (!vm.activePeerId) vm.activePeerList.splice(0, 0, thisPeer);
+              else vm.activePeerList.splice(0, 0, thisPeer);
+            }
+            thisPeer.message = thisPeer.message || [];
+            $timeout(function () {
+              thisPeer.message.push(data);
+            });
           }
-          thisPeer.message = thisPeer.message || [];
-          $timeout(function() {
-            thisPeer.message.push(data);
-          });
         });
       });
       vm.peerObj.on('call', function(call) {
@@ -223,8 +285,8 @@ angular.module('peerDslApp')
       vm.worker.onmessage = function(result) {
         if (result.data.type =='done') {
           console.log('in worker message', result);
-          _.forEach(result.data.data, function(f) {
-            vm.activePeerConn.send(f.data);
+          _.forEach(result.data.data, function(f, key) {
+            vm.activePeerConn.send({type:'video', content:f.data, name:f.name, length:result.data.data.length, index: key});
             console.log('send', f.name);
           })
         } else {
@@ -241,6 +303,26 @@ angular.module('peerDslApp')
         vm.worker.postMessage(files);
       };
       reader.readAsArrayBuffer(file);
+    };
+    vm.changeVideo = function(m) {
+      console.log('on complete');
+      //console.log(m);
+      var re = new RegExp("output" + m.index + ".mp4");
+      if (m.index < m.length - 1) {
+        //$timeout(function() {
+          $timeout(function() {
+            m.sources = [{src: m.sources[0].src.replace(re, "output" + (m.index + 1) + ".mp4"), type:'video/mp4'}];
+            m.index += 1;
+          });
+          console.log(m.sources[0].src);
+
+        //$timeout(vm.API.play.bind(vm.API), 2000);
+        //});
+        console.log(m.index);
+      } else {
+        m.sources = [{src : m.sources[0].src.replace(re, "output0.mp4"), type:'video/mp4'}];
+        m.index = 0;
+      }
     };
     vm.uploadVideo = function(file) {
       var reader = new FileReader();
@@ -272,6 +354,9 @@ angular.module('peerDslApp')
     };
     vm.myVideoMuted = function(API) {
       API.setVolume(0);
+    };
+    vm.onlinePlayerReady = function(API) {
+      vm.API = API;
     };
 
 

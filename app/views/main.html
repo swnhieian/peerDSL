@@ -37,6 +37,24 @@
           <div class="text" ng-if="m.source != 'system'">
             <img class="picture" src="{{m.content}}" ng-if="m.type =='picture'"/>
             <div class="text" ng-if="m.type == 'text'">{{m.content}}</div>
+            <div class="onlineVideoContainer" ng-if="m.type == 'video'">
+              <videogular vg-theme="main.onlineVideoConfig.theme" vg-player-ready="main.onlinePlayerReady($API)" vg-complete="main.changeVideo(m)">
+                <vg-media vg-src="m.sources"></vg-media>
+                <vg-controls vg-autohide="true">
+                  <vg-play-pause-button></vg-play-pause-button>
+                  <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+                  <vg-scrub-bar>
+                    <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                  </vg-scrub-bar>
+                  <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+                  <vg-volume>
+                    <vg-mute-button></vg-mute-button>
+                    <vg-volume-bar></vg-volume-bar>
+                  </vg-volume>
+                  <vg-fullscreen-button></vg-fullscreen-button>
+                </vg-controls>
+              </videogular>
+            </div>
           </div>
 
         </div>
@@ -64,25 +82,7 @@
             </vg-controls>
           </videogular>
         </div>
-        <video src="{{main.onlineVideoURL}}" autoplay></video>
-        <div class="onlineVideoContainer" ng-show="true">
-          <videogular vg-theme="main.onlineVideoConfig.theme" vg-auto-play="true">
-            <vg-media vg-src="main.onlineVideoConfig.sources"></vg-media>
-            <vg-controls vg-autohide="true">
-              <vg-play-pause-button></vg-play-pause-button>
-              <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
-              <vg-scrub-bar>
-                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-              </vg-scrub-bar>
-              <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
-              <vg-volume>
-                <vg-mute-button></vg-mute-button>
-                <vg-volume-bar></vg-volume-bar>
-              </vg-volume>
-              <vg-fullscreen-button></vg-fullscreen-button>
-            </vg-controls>
-          </videogular>
-        </div>
+
       </div>
       <div class="chat-operation">
         <span ng-click="main.videoChat()" ng-show="!main.showMyVideo">
