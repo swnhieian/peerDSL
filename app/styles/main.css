@@ -98,6 +98,9 @@ input.search {
 .main .sidebar .card .tabs .tab-item.active {
   color: #3caf36;
 }
+.main .sidebar .list .active {
+  overflow-y: scroll;
+}
 .main .sidebar .list .user-info.active {
   /*background-color: hsla(0, 0%, 100%, .1);*/
   background-color: #3a3f45;

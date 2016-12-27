@@ -6,27 +6,30 @@
         <p class="name" ng-click="main.changeName()">{{main.peerName}}</p>
       </div>
       <div class="search-box">
-        <input type="text" class="search" placeholder="search...">
+        <input type="text" class="search" placeholder="search..." ng-model="main.search.name">
       </div>
       <div class="tabs">
-        <div class="tab-item active"><a href="#"><i class="fa fa-users"></i></a></div>
-        <div class="tab-item"><a href="#"><i class="fa fa-user"></i></a></div>
+        <div class="tab-item" ng-class="main.functionList == 'active'?'active':''"><a href="#" ng-click="main.changeFunction('active')"><i class="fa fa-user"></i></a></div>
+        <div class="tab-item" ng-class="main.functionList == 'conferencing'?'active':''"><a href="#" ng-click="main.changeFunction('conferencing')"><i class="fa fa-users"></i></a></div>
         <div class="tab-item"><a href="#"><i class="fa fa-user"></i></a></div>
       </div>
     </div>
     <div class="list">
-      <div ng-if="false" class="active">
-        <div ng-repeat="p in main.activePeerList" ng-show="p.id != main.peerObj.id" class="user-info" ng-click="main.connectPeer(p.id)" ng-class="p.id == main.activePeerId?'active':''">
+      <div ng-if="main.functionList == 'active'" class="active">
+        <div ng-repeat="p in main.activePeerList | filter:main.search:strict" ng-show="p.id != main.peerObj.id" class="user-info" ng-click="main.connectPeer(p.id)" ng-class="p.id == main.activePeerId?'active':''">
           <img src="images/2.jpg" class="avatar">
           <p class="name">{{p.name}}</p>
           <span class="badge pull-right" ng-show="p.unread > 0">{{p.unread}}</span>
         </div>
       </div>
-      <div class="conferencing" ng-if="true">
+      <div class="conferencing" ng-if="main.functionList == 'conferencing'">
         <button class="btn btn-primary" ng-click="main.openConferenceRoom()">open</button>
-        <button class="btn btn-primary" ng-click="main.joinConferenceRoom()">join</button>
-
-
+        <button class="btn btn-primary" ng-click="main.exitConferenceRoom()">exit</button>
+        <div ng-repeat="c in main.activeConferenceList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="p.id == main.activeConfrenceId?'active':''">
+          <img src="images/2.jpg" class="avatar">
+          <p class="name">{{c.name}}</p>
+          <span class="badge pull-right" ng-show="c.people > 0">{{c.people}}</span>
+        </div>
       </div>
       <div class="broadcasting" ng-if="false"></div>
 

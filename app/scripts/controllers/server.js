@@ -19,11 +19,20 @@ var ServerCtrl = function($timeout) {
     //vm.peer = new Peer('iamserver', {key: 'ggp79a86cknpnwmi'});
     vm.peer = new Peer('iamserver', {host: 'shiweinan.imwork.net', port: 10000, path:'/myapp'});
     vm.peerList = [];
+    vm.confList = [];
     vm.broadcast = function(data) {
       console.log("broadcast", data);
       _.forEach(vm.peerList, function(a) {
         a.send(data);
       });
+    };
+    vm.sendConfList = function(conn) {
+      var idList = [];
+      for (var i = 0; i < vm.confList.length; i++) {
+        idList.push({id: vm.confList[i].peer, name:vm.confList[i].name});
+      }
+      $timeout(function() {conn.send({type:'confList', data: idList});}, 10);
+      console.log('sendconfList',idList);
     };
     vm.sendList = function(conn) {
       var idList = [];
@@ -74,6 +83,13 @@ var ServerCtrl = function($timeout) {
             _.forEach(vm.peerList, function(p) {
               if (p.peer == conn.peer) p.name = data.data;
             });
+            break;
+          case 'newConference':
+            $timeout(function() {vm.confList.push({id: data.id, name:data.name});});
+            vm.broadcast({type:'newConference', data: {id: data.id, name:data.name}});
+            break;
+          case 'confList':
+            vm.sendConfList(conn);
             break;
           default:
             break;

@@ -27,14 +27,14 @@ angular
     $stateProvider
       .state('server', {
         url: '/server',
-	abstract: false,
+	      abstract: false,
         templateUrl: 'views/server.html',
         controller: ServerCtrl,
         controllerAs: 'server'
       })
       .state('main', {
         url: '/',
-	abstract: false,
+	      abstract: false,
         templateUrl: 'views/main.html',
         controller: MainCtrl,
         controllerAs: 'main'
