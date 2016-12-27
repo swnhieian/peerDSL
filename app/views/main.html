@@ -15,14 +15,19 @@
       </div>
     </div>
     <div class="list">
-      <div class="active">
+      <div ng-if="false" class="active">
         <div ng-repeat="p in main.activePeerList" ng-show="p.id != main.peerObj.id" class="user-info" ng-click="main.connectPeer(p.id)" ng-class="p.id == main.activePeerId?'active':''">
           <img src="images/2.jpg" class="avatar">
           <p class="name">{{p.name}}</p>
           <span class="badge pull-right" ng-show="p.unread > 0">{{p.unread}}</span>
         </div>
       </div>
-      <div class="allUser" ng-if="false"></div>
+      <div class="conferencing" ng-if="true">
+        <button class="btn btn-primary" ng-click="main.openConferenceRoom()">open</button>
+        <button class="btn btn-primary" ng-click="main.joinConferenceRoom()">join</button>
+
+
+      </div>
       <div class="broadcasting" ng-if="false"></div>
 
     </div>
@@ -38,7 +43,7 @@
             <img class="picture" src="{{m.content}}" ng-if="m.type =='picture'"/>
             <div class="text" ng-if="m.type == 'text'">{{m.content}}</div>
             <div class="onlineVideoContainer" ng-if="m.type == 'video'">
-              <videogular vg-theme="main.onlineVideoConfig.theme" vg-player-ready="main.onlinePlayerReady($API)" vg-complete="main.changeVideo(m)">
+              <videogular vg-theme="main.onlineVideoConfig.theme" vg-player-ready="main.onlinePlayerReady($API)" vg-update-time="main.onlinePlayerTimeUpdated($currentTime, $duration, m)" vg-complete="main.changeVideo(m)">
                 <vg-media vg-src="m.sources"></vg-media>
                 <vg-controls vg-autohide="true">
                   <vg-play-pause-button></vg-play-pause-button>
@@ -53,6 +58,7 @@
                   </vg-volume>
                   <vg-fullscreen-button></vg-fullscreen-button>
                 </vg-controls>
+                <vg-buffering></vg-buffering>
               </videogular>
             </div>
           </div>
@@ -82,6 +88,11 @@
             </vg-controls>
           </videogular>
         </div>
+
+        <div ng-repeat="v in main.conferenceVideos">
+          <video src="{{main.trustSrc(v.mediaElement.src)}}" controls="controls" autoplay width="150px" height="150px" style="display: inline-block; z-index: 99"></video>
+        </div>
+
 
       </div>
       <div class="chat-operation">

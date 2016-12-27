@@ -16,8 +16,11 @@ angular
     'ngStorage',
     "com.2fdevs.videogular",
     "com.2fdevs.videogular.plugins.controls",
+    "com.2fdevs.videogular.plugins.overlayplay",
+    "com.2fdevs.videogular.plugins.buffering",
     "luegg.directives",
-    "ui.bootstrap"
+    "ui.bootstrap",
+    'ngVideo'
   ])
   .config(function ($routeProvider) {
 /*    $urlRouteProvider.otherwise('/');

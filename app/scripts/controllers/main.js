@@ -8,7 +8,7 @@
  * Controller of the peerDslApp
  */
 angular.module('peerDslApp')
-  .controller('MainCtrl', function ($scope, $timeout, $sce, Webworker, $localStorage, $uibModal) {
+  .controller('MainCtrl', function ($scope, $timeout, $sce, Webworker, $localStorage, $uibModal, video) {
     var vm = this;
     $scope.$storage = $localStorage;
     vm.getMyVideoStream = function() {
@@ -86,7 +86,18 @@ angular.module('peerDslApp')
                   fileWriter.onwriteend = function(e) {
                     console.log('write completed.', data.name);
                     if (data.index == 0) {
-                      var video = {type:'video', sources: [{src:fileEntry.toURL(),type:'video/mp4'}], source: 'peer',index:data.index,length:data.length};
+                      vm.videoInfo = {type:'video', sources: [{src:fileEntry.toURL(),type:'video/mp4'}], source: 'peer',index:data.index,length:data.length};
+                      vm.videos = [];
+                      vm.videos.push({sources:[{src: fileEntry.toURL(), type: 'video/mp4'}]});
+                      for (var i=1; i<data.length; i++) {
+                        vm.videos.push({sources:[{src: 'filesystem:https://shiweinan.imwork.net/temporary/output'+(i)+'.mp4', type: 'video/mp4'}]});
+                      }
+                      console.log(vm.videos);
+                      console.log('url:',fileEntry.toURL());
+
+                      /*var source = video.multiSource();
+                      source.addSource('mp4', videoInfo.sources[0].src);
+                      source.save();*/
                       if (vm.activePeerId != conn.peer) {
                         _.remove(vm.activePeerList, function (p) {
                           return p.id == conn.peer;
@@ -97,12 +108,12 @@ angular.module('peerDslApp')
                         else vm.activePeerList.splice(0, 0, thisPeer);
                       }
                       $timeout(function() {
-                        console.log(video);
+                        console.log(vm.videoInfo);
                         thisPeer.message = thisPeer.message || [];
-                        thisPeer.message.push(video);
+                        thisPeer.message.push(vm.videoInfo);
                       });
                     } else {
-
+                      //vm.videoInfo.videoList.push({src: fileEntry.toURL(), type: 'video/mp4'});
                     }
                   };
                   fileWriter.onerror = function(e) {
@@ -304,21 +315,40 @@ angular.module('peerDslApp')
       };
       reader.readAsArrayBuffer(file);
     };
+    vm.onlinePlayerTimeUpdated = function($currentTime, $duration, m) {
+     /* if ($duration - $currentTime < 1) {
+        $timeout(function() {
+          m.sources = [{src: 'https://shiweinan.imwork.net/temporary/output'+(m.index+1)+'.mp4', type:'video/mp4'}];
+          m.index += 1;
+        }, ($duration - $currentTime)*1000);
+      }
+      console.log('in time updated:', $currentTime, $duration);*/
+    };
     vm.changeVideo = function(m) {
-      console.log('on complete');
+     // console.log('on complete');
       //console.log(m);
       var re = new RegExp("output" + m.index + ".mp4");
       if (m.index < m.length - 1) {
+       // vm.API.changeSource([{src: 'filesystem:https://shiweinan.imwork.net/temporary/output'+(m.index+1)+'.mp4', type:'video/mp4'}]);
+        vm.API.stop();
+        //m.sources =  [{src: 'filesystem:https://shiweinan.imwork.net/temporary/output'+(m.index+1)+'.mp4', type:'video/mp4'}];
+        m.sources = vm.videos[m.index+1].sources;
+        // m.sources[0].src = 'filesystem:https://shiweinan.imwork.net/temporary/output'+(m.index+1)+'.mp4';
+        //vm.API.seekTime(50, true);
+        //m.sources = [{src: m.sources[0].src.replace(re, "output" + (m.index + 1) + ".mp4"), type:'video/mp4'}];
+        //m.sources = [{src: m.sources[0].src.replace(re, "output" + (m.index + 1) + ".mp4"), type:'video/mp4'}];
         //$timeout(function() {
+        m.index += 1;
+        //});
+/*
           $timeout(function() {
             m.sources = [{src: m.sources[0].src.replace(re, "output" + (m.index + 1) + ".mp4"), type:'video/mp4'}];
             m.index += 1;
-          });
-          console.log(m.sources[0].src);
+          });*/
+          //console.log(m.index);
 
-        //$timeout(vm.API.play.bind(vm.API), 2000);
+        $timeout(vm.API.play.bind(vm.API), 100);
         //});
-        console.log(m.index);
       } else {
         m.sources = [{src : m.sources[0].src.replace(re, "output0.mp4"), type:'video/mp4'}];
         m.index = 0;
@@ -358,6 +388,7 @@ angular.module('peerDslApp')
     vm.onlinePlayerReady = function(API) {
       vm.API = API;
     };
+
 
 
 
@@ -618,6 +649,37 @@ angular.module('peerDslApp')
       vm.videogularnum ++;
       console.log("videogular num", vm.videogularnum);
     }*/
+
+    vm.initConference = function() {
+      vm.conferenceVideos = [];
+      vm.RMConnection = new RTCMultiConnection();
+      vm.RMConnection.socketURL = 'https://183.172.13.30:8542/';
+      vm.RMConnection.socketMessageEvent = 'video-conference';
+      vm.RMConnection.session = {
+        audio: true,
+        video: true
+      };
+      vm.RMConnection.sdpConstraints.mandatory = {
+        OfferToReceiveAudio: true,
+        OfferToReceiveVideo: true
+      };
+      vm.RMConnection.onstream = function(event) {
+        console.log("RMC",event);
+        $timeout(function() {
+          vm.conferenceVideos.push(event);
+          console.log('conferenceVideos', vm.conferenceVideos);
+        });
+      };
+    };
+    vm.initConference();
+    vm.openConferenceRoom = function() {
+      vm.RMConnection.open('i', function() {
+        console.log('getttt', vm.RMConnection.sessionid);
+      });
+    };
+    vm.joinConferenceRoom = function() {
+      vm.RMConnection.join('i');
+    };
 
 
 

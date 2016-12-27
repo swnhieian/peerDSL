@@ -9,7 +9,7 @@ function print(text) {
     'data': text
   });
 }
-var args = ['-i', '','-codec','copy','-f','segment', '-map', '0', 'output\%d.mp4'];
+var args = ['-i', '','-codec','copy','-f','segment','-segment_time', '10', '-reset_timestamps','1', '-map', '0', 'output\%d.mp4'];
 onmessage = function(event) {
   var files = event.data;
   console.log('in worker');

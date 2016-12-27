@@ -38,6 +38,8 @@ module.exports = function(config) {
       'bower_components/angularjs-scroll-glue/src/scrollglue.js',
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/ngvideo/dist/ng-video.js',
+      'bower_components/videogular-overlay-play/vg-overlay-play.js',
       // endbower
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
