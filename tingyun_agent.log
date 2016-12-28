@@ -1,0 +1,1753 @@
+
+2016-12-28 11:41:04.438 (pid:25906,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 11:41:04.631 (pid:25906,uid:0) INFO    <agent> Starting login...
+2016-12-28 11:41:04.634 (pid:25906,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 11:41:05.038 (pid:25906,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 11:41:05.139 (pid:25906,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 11:41:05.252 (pid:25906,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 11:42:05.253 (pid:25906,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700381611
+	
+2016-12-28 11:42:05.318 (pid:25906,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:43:05.255 (pid:25906,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700381611
+	
+2016-12-28 11:43:05.316 (pid:25906,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:44:05.254 (pid:25906,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700381611
+	
+2016-12-28 11:44:05.306 (pid:25906,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:44:50.306 (pid:26059,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 11:44:50.469 (pid:26059,uid:0) INFO    <agent> Starting login...
+2016-12-28 11:44:50.472 (pid:26059,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 11:44:50.796 (pid:26059,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 11:44:50.891 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 11:44:50.991 (pid:26059,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 11:45:50.994 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:45:51.033 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:46:50.995 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:46:51.060 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:47:50.995 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:47:51.065 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:48:50.997 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:48:51.073 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:49:50.996 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:49:51.057 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:50:50.998 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:50:51.056 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:51:50.998 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:51:51.060 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:52:50.999 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:52:51.039 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:53:51.000 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:53:51.064 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:54:51.001 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:54:51.049 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:55:51.001 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:55:51.064 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:56:51.003 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:56:51.053 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:57:51.004 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:57:51.106 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:58:51.005 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:58:51.036 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 11:59:51.005 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 11:59:51.039 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:00:51.005 (pid:26059,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700383079
+	
+2016-12-28 12:00:51.044 (pid:26059,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:05:19.940 (pid:26535,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:05:20.103 (pid:26535,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:05:20.106 (pid:26535,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:05:20.412 (pid:26535,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:05:20.507 (pid:26535,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:05:20.598 (pid:26535,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:06:20.600 (pid:26535,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700391002
+	
+2016-12-28 12:06:20.669 (pid:26535,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:07:20.603 (pid:26535,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700391002
+	
+2016-12-28 12:07:20.650 (pid:26535,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:08:20.603 (pid:26535,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700391002
+	
+2016-12-28 12:08:20.941 (pid:26535,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:09:20.605 (pid:26535,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700391002
+	
+2016-12-28 12:09:20.639 (pid:26535,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:10:22.144 (pid:27431,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:10:22.306 (pid:27431,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:10:22.308 (pid:27431,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:10:22.616 (pid:27431,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:10:22.705 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:10:22.764 (pid:27431,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:11:22.765 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:11:22.829 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:12:22.767 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:12:22.803 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:13:22.766 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:13:22.800 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:14:22.768 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:14:22.839 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:15:22.768 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:15:22.810 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:16:22.770 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:16:22.837 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:17:22.770 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:17:22.812 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:18:22.771 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:18:22.853 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:19:22.771 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:19:22.865 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:20:22.771 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:20:22.814 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:21:22.771 (pid:27431,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700392825
+	
+2016-12-28 12:21:22.809 (pid:27431,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	                                                                                                                                                                                                                                                                                                                                       
+2016-12-28 12:24:49.193 (pid:2621,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:24:49.830 (pid:2621,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:24:49.831 (pid:2621,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:24:51.129 (pid:2621,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:24:51.168 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:24:51.262 (pid:2621,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:25:51.262 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:25:51.298 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:26:51.262 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:26:51.292 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:27:51.262 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:27:51.303 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:28:51.262 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:28:51.320 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:29:51.262 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:29:51.303 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:30:51.264 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:30:51.295 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:31:51.263 (pid:2621,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700398319
+	
+2016-12-28 12:31:51.292 (pid:2621,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:32:01.129 (pid:2961,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:32:01.197 (pid:2961,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:32:01.198 (pid:2961,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:32:01.350 (pid:2961,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:32:01.393 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:32:01.466 (pid:2961,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:33:01.466 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:33:01.506 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:34:01.467 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:34:01.529 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:35:01.468 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:35:01.496 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:36:01.470 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:36:01.504 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:37:01.471 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:37:01.531 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:38:01.471 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:38:01.556 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:39:01.471 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:39:01.542 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:40:01.472 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:40:01.520 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:41:01.472 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:41:01.516 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:42:01.472 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:42:01.504 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:43:01.473 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:43:01.511 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:44:01.473 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:44:01.518 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:45:01.473 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:45:01.500 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:46:01.473 (pid:2961,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700400919
+	
+2016-12-28 12:46:01.503 (pid:2961,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:46:35.261 (pid:4027,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:46:35.328 (pid:4027,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:46:35.330 (pid:4027,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:46:58.014 (pid:4038,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:46:58.082 (pid:4038,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:46:58.083 (pid:4038,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:46:58.254 (pid:4038,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:46:58.306 (pid:4038,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:46:58.363 (pid:4038,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:47:58.364 (pid:4038,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700406491
+	
+2016-12-28 12:47:58.434 (pid:4038,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:48:46.878 (pid:4152,uid:0) INFO    <index> TingYun node version 1.3.0 Starting...
+2016-12-28 12:48:46.945 (pid:4152,uid:0) INFO    <agent> Starting login...
+2016-12-28 12:48:46.946 (pid:4152,uid:0) INFO    <server.request-method> Post https://redirect.networkbench.com/getRedirectHost?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:48:47.105 (pid:4152,uid:0) INFO    <server.request-method> Response from /getRedirectHost {status: success, code: 200}
+	
+2016-12-28 12:48:47.154 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/initAgentApp?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac
+	
+2016-12-28 12:48:47.229 (pid:4152,uid:0) INFO    <server.request-method> Response from /initAgentApp {status: success, code: 200}
+	
+2016-12-28 12:49:47.230 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:49:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:50:47.231 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:50:47.282 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:51:47.231 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:51:47.263 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:52:47.231 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:52:47.268 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:53:47.231 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:53:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:54:47.232 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:54:47.278 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:55:47.233 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:55:47.266 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:56:47.233 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:56:47.475 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:57:47.233 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:57:47.272 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:58:47.234 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:58:47.262 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 12:59:47.234 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 12:59:47.258 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:00:47.234 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:00:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:01:47.234 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:01:47.268 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:02:47.235 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:02:47.264 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:03:47.235 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:03:47.264 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:04:47.235 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:04:47.294 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:05:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:05:47.276 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:06:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:06:47.265 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:07:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:07:47.268 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:08:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:08:47.269 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:09:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:09:47.263 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:10:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:10:47.267 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:11:47.236 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:11:47.302 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:12:47.237 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:12:47.270 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:13:47.238 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:13:47.269 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:14:47.239 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:14:47.266 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:15:47.240 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:15:47.266 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:16:47.241 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:16:47.281 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:17:47.241 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:17:47.270 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:18:47.243 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:18:47.302 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:19:47.243 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:19:47.280 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:20:47.244 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:20:47.278 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:21:47.245 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:21:47.271 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:22:47.246 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:22:47.303 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:23:47.245 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:23:47.279 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:24:47.246 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:24:47.303 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:25:47.246 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:25:47.272 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:26:47.247 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:26:47.282 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:27:47.247 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:27:47.274 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:28:47.248 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:28:47.283 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:29:47.247 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:29:47.283 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:30:47.248 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:30:47.276 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:31:47.249 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:31:47.275 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:32:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:32:47.282 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:33:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:33:47.306 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:34:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:34:47.285 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:35:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:35:47.312 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:36:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:36:47.279 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:37:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:37:47.277 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:38:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:38:47.278 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:39:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:39:47.285 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:40:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:40:47.284 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:41:47.250 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:41:47.279 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:42:47.251 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:42:47.285 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:43:47.252 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:43:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:44:47.253 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:44:47.331 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:45:47.253 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:45:47.306 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:46:47.254 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:46:47.322 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:47:47.255 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:47:47.290 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:48:47.255 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:48:47.297 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:49:47.255 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:49:47.288 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:50:47.256 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:50:47.282 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:51:47.256 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:51:47.297 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:52:47.258 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:52:47.310 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:53:47.258 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:53:47.444 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:54:47.258 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:54:47.399 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:55:47.259 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:55:47.329 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:56:47.259 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:56:47.317 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:57:47.259 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:57:47.313 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:58:47.260 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:58:47.286 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 13:59:47.261 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 13:59:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:00:47.261 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:00:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:01:47.261 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:01:47.297 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:02:47.263 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:02:47.299 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:03:47.263 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:03:47.291 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:04:47.263 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:04:47.302 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:05:47.264 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:05:47.316 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:06:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:06:47.301 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:07:47.264 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:07:47.294 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:08:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:08:47.330 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:09:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:09:47.298 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:10:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:10:47.325 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:11:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:11:47.295 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:12:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:12:47.299 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:13:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:13:47.318 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:14:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:14:47.297 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:15:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:15:47.289 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:16:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:16:47.304 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:17:47.265 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:17:47.294 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:18:47.267 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:18:47.291 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:19:47.267 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:19:47.299 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:20:47.267 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:20:47.307 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:21:47.268 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:21:47.330 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:22:47.268 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:22:47.309 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:23:47.268 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:23:47.301 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:24:47.269 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:24:47.300 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:25:47.269 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:25:47.297 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:26:47.270 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:26:47.298 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:27:47.271 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:27:47.358 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:28:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:28:47.310 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:29:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:29:47.305 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:30:47.273 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:30:47.298 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:31:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:31:47.303 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:32:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:32:47.338 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:33:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:33:47.322 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:34:47.272 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:34:47.303 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:35:47.273 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:35:47.301 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:36:47.273 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:36:47.332 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:37:47.274 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:37:47.314 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:38:47.274 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:38:47.307 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:39:47.274 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:39:47.304 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:40:47.274 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:40:47.305 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:41:47.274 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:41:47.314 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:42:47.275 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:42:47.304 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:43:47.275 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:43:47.326 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:44:47.276 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:44:47.307 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:45:47.276 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:45:47.302 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:46:47.278 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:46:47.312 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:47:47.278 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:47:47.305 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:48:47.278 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:48:47.321 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:49:47.278 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:49:47.310 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:50:47.279 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:50:47.354 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:51:47.279 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:51:47.313 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:52:47.280 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:52:47.307 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:53:47.280 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:53:47.312 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:54:47.280 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:54:47.380 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:55:47.280 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:55:47.320 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:56:47.281 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:56:47.314 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:57:47.280 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:57:47.318 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:58:47.283 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:58:47.324 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 14:59:47.283 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 14:59:47.318 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:00:47.284 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:00:47.320 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:01:47.284 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:01:47.351 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:02:47.285 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:02:47.323 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:03:47.286 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:03:47.312 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:04:47.286 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:04:47.360 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:05:47.286 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:05:47.345 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:06:47.287 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:06:47.312 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:07:47.287 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:07:47.321 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:08:47.287 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:08:47.319 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:09:47.287 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:09:47.317 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:10:47.288 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:10:47.316 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:11:47.288 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:11:47.324 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:12:47.288 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:12:47.803 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:13:47.288 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:13:47.323 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:14:47.288 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:14:47.367 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:15:47.289 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:15:47.341 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:16:47.290 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:16:47.618 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:17:47.290 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:17:49.177 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:18:47.290 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:18:47.830 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:19:47.291 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:19:47.509 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:20:47.291 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:20:47.727 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:21:47.291 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:21:47.647 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:22:47.293 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:22:47.389 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:23:47.293 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:23:47.355 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:24:47.293 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:24:47.327 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:25:47.293 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:25:47.330 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:26:47.294 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:26:47.346 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:27:47.294 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:27:47.319 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:28:47.295 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:28:47.373 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:29:47.295 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:29:47.321 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:30:47.296 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:30:47.416 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:31:47.296 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:31:47.353 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:32:47.297 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:32:47.325 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:33:47.298 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:33:47.331 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:34:47.298 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:34:47.332 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:35:47.298 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:35:47.383 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:36:47.299 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:36:47.325 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:37:47.299 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:37:47.351 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:38:47.300 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:38:47.328 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:39:47.300 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:39:47.360 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:40:47.300 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:40:47.326 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:41:47.300 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:41:47.330 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:42:47.302 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:42:47.332 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:43:47.303 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:43:47.329 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:44:47.303 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:44:47.332 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:45:47.303 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:45:47.328 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:46:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:46:47.370 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:47:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:47:47.336 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:48:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:48:47.339 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:49:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:49:47.374 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:50:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:50:47.355 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:51:47.304 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:51:47.361 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:52:47.305 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:52:47.357 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:53:47.305 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:53:47.340 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:54:47.306 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:54:47.342 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:55:47.305 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:55:47.336 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:56:47.306 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:56:47.334 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:57:47.307 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:57:47.352 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:58:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:58:47.340 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 15:59:47.307 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 15:59:47.343 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:00:47.307 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:00:47.338 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:01:47.307 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:01:47.395 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:02:47.307 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:02:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:03:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:03:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:04:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:04:47.339 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:05:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:05:47.333 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:06:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:06:47.344 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:07:47.308 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:07:47.335 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:08:47.309 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:08:47.334 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:09:47.309 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:09:47.338 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:10:47.311 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:10:47.346 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:11:47.311 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:11:47.346 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:12:47.312 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:12:47.338 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:13:47.312 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:13:47.339 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:14:47.312 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:14:47.385 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:15:47.312 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:15:47.696 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:16:47.313 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:16:47.344 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:17:47.313 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:17:48.156 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:18:47.314 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:18:47.945 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:19:47.314 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:19:48.166 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:20:47.315 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:20:48.190 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:21:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:21:48.266 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:22:47.317 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:22:48.180 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:23:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:23:48.184 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:24:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:24:48.186 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:25:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:25:53.406 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:26:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:26:48.189 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:27:47.316 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:27:48.193 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:28:47.318 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:28:48.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:29:47.318 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:29:48.712 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:30:47.318 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:30:48.180 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:31:47.318 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:31:48.206 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:32:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:32:47.725 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:33:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:33:48.169 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:34:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:34:48.178 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:35:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:35:48.705 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:36:47.320 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:36:48.582 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:37:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:37:48.361 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:38:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:38:48.120 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:39:47.319 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:39:48.172 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:40:47.320 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:40:48.197 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:41:47.320 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:41:48.187 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:42:47.321 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:42:48.083 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:43:47.321 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:43:47.858 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:44:47.322 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:44:47.393 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:45:47.322 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:45:47.351 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:46:47.323 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:46:47.350 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:47:47.323 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:47:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:48:47.324 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:48:47.387 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:49:47.324 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:49:47.359 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:50:47.325 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:50:47.359 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:51:47.325 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:51:47.387 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:52:47.325 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:52:47.371 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:53:47.325 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:53:47.353 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:54:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:54:47.363 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:55:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:55:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:56:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:56:47.416 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:57:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:57:47.352 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:58:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:58:47.369 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 16:59:47.326 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 16:59:47.380 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:00:47.327 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:00:47.394 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:01:47.327 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:01:47.392 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:02:47.328 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:02:47.354 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:03:47.328 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:03:47.388 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:04:47.329 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:04:47.358 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:05:47.329 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:05:47.372 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:06:47.329 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:06:47.373 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:07:47.329 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:07:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:08:47.330 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:08:47.365 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:09:47.330 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:09:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:10:47.330 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:10:47.369 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:11:47.330 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:11:47.379 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:12:47.332 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:12:47.638 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:13:47.332 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:13:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:14:47.332 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:14:47.372 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:15:47.333 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:15:47.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:16:47.333 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:16:47.384 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:17:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:17:47.382 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:18:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:18:47.452 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:19:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:19:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:20:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:20:47.363 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:21:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:21:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:22:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:22:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:23:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:23:47.362 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:24:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:24:47.361 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:25:47.334 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:25:47.390 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:26:47.335 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:26:47.363 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:27:47.335 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:27:47.360 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:28:47.335 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:28:47.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:29:47.336 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:29:47.365 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:30:47.336 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:30:47.396 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:31:47.336 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:31:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:32:47.337 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:32:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:33:47.338 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:33:47.368 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:34:47.338 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:34:47.374 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:35:47.338 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:35:47.364 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:36:47.338 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:36:47.394 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:37:47.338 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:37:47.366 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:38:47.339 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:38:47.378 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:39:47.339 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:39:47.367 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:40:47.340 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:40:47.396 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:41:47.340 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:41:47.367 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:42:47.341 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:42:47.393 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:43:47.341 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:43:47.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:44:47.342 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:44:47.379 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:45:47.342 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:45:47.377 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:46:47.342 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:46:47.373 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:47:47.342 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:47:47.370 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:48:47.344 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:48:47.405 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:49:47.344 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:49:47.378 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:50:47.345 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:50:47.370 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:51:47.345 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:51:47.511 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:52:47.346 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:52:47.391 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:53:47.347 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:53:47.383 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:54:47.347 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:54:47.380 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:55:47.347 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:55:47.382 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:56:47.348 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:56:47.375 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:57:47.348 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:57:47.400 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:58:47.348 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:58:47.386 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 17:59:47.348 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 17:59:47.377 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:00:47.349 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:00:47.408 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:01:47.349 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:01:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:02:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:02:47.380 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:03:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:03:47.385 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:04:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:04:47.565 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:05:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:05:47.386 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:06:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:06:47.376 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:07:47.350 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:07:47.379 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:08:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:08:47.391 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:09:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:09:47.393 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:10:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:10:47.383 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:11:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:11:47.431 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:12:47.352 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:12:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:13:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:13:47.377 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:14:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:14:47.382 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:15:47.351 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:15:47.376 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:16:47.352 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:16:47.409 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:17:47.353 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:17:47.380 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:18:47.353 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:18:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:19:47.354 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:19:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:20:47.354 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:20:47.385 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:21:47.354 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:21:47.381 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:22:47.355 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:22:47.421 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:23:47.355 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:23:47.387 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:24:47.355 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:24:47.384 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:25:47.355 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:25:47.383 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:26:47.357 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:26:47.396 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:27:47.357 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:27:47.411 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:28:47.358 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:28:47.423 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:29:47.357 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:29:47.383 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:30:47.357 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:30:47.385 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:31:47.358 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:31:47.404 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:32:47.358 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:32:47.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:33:47.358 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:33:47.416 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:34:47.358 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:34:47.394 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:35:47.359 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:35:47.417 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:36:47.359 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:36:47.386 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:37:47.359 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:37:47.393 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:38:47.359 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:38:47.414 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:39:47.359 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:39:47.400 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:40:47.361 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:40:47.390 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:41:47.361 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:41:47.398 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:42:47.361 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:42:47.417 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:43:47.361 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:43:47.389 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:44:47.362 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:44:47.420 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:45:47.362 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:45:47.441 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:46:47.362 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:46:47.387 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:47:47.362 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:47:47.400 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:48:47.363 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:48:47.390 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	
+2016-12-28 18:49:47.364 (pid:4152,uid:0) INFO    <server.request-method> Post https://dcs1.networkbench.com/upload?version=1.3.2&licenseKey=1a50bfdc1d817ceba96e6861195115ac&appSessionKey=700407221
+	
+2016-12-28 18:49:47.397 (pid:4152,uid:0) INFO    <server.request-method> Response from /upload {status: success, code: 200}
+	

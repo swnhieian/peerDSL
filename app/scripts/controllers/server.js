@@ -31,7 +31,7 @@ var ServerCtrl = function($timeout) {
       for (var i = 0; i < vm.confList.length; i++) {
         idList.push({id: vm.confList[i].peer, name:vm.confList[i].name});
       }
-      $timeout(function() {conn.send({type:'confList', data: idList});}, 10);
+      $timeout(function() {conn.send({type:'confList', data: idList});}, 20);
       console.log('sendconfList',idList);
     };
     vm.sendList = function(conn) {
@@ -39,20 +39,27 @@ var ServerCtrl = function($timeout) {
       for (var i = 0; i < vm.peerList.length; i++) {
         idList.push({id: vm.peerList[i].peer, name:vm.peerList[i].name});
       }
-      $timeout(function() {conn.send({type:'peerList', data: idList});}, 10);
+      $timeout(function() {conn.send({type:'peerList', data: idList});}, 20);
       console.log('sendList',idList);
     };
     vm.peer.on('connection', function(conn) {
       conn.name = conn.peer;
       //vm.sendList(conn);
       vm.broadcast({type: 'newPeer', data: {id: conn.peer, name: conn.peer}});
-      $timeout(function() {vm.peerList.push(conn);});
+      $timeout(function() {vm.peerList.push(conn);vm.peerList=_.uniqBy(vm.peerList, 'peer');});
       //_.forEach(vm.peerList, function(c) {vm.sendList(c);});
       //vm.sendIdList();
       //console.log('send');
       //console.log(vm.peerList);
       conn.on('close', function() {
         console.log('closed', this.id);
+        var closedId = this.id;
+        var index = _.findIndex(vm.confList, function(o) {return o.id == closedId});
+        if (index >=0) {
+	  vm.confList.splice(index, 1);
+          vm.broadcast({type: 'closeConference', data: {id: closedId}});
+        } 
+        _.remove(vm.peerList, function(o) {return o.peer == closedId;});       
         vm.broadcast({type:'closePeer', data: {id: this.peer}});
         /* var removedId = this.id;
         _.remove(vm.peerList, function(p) { return p.id == removedId;});

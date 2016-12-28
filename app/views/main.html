@@ -23,9 +23,11 @@
         </div>
       </div>
       <div class="conferencing" ng-if="main.functionList == 'conferencing'">
-        <button class="btn btn-primary" ng-click="main.openConferenceRoom()">创建</button>
-        <button class="btn btn-primary" ng-if="main.activeConferenceId == main.peerId" ng-click="main.closeConferenceRoom()">结束</button>
-        <div ng-repeat="c in main.activeConfList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="p.id == main.activeConfrenceId?'active':''">
+        <div class="confOperation text-center">
+          <button class="btn btn-primary" ng-click="main.openConferenceRoom()">创建</button>
+          <button class="btn btn-primary" ng-show="main.activeConferenceId == main.peerId" ng-click="main.closeConferenceRoom()">结束</button>
+        </div>
+        <div ng-repeat="c in main.activeConfList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="c.id == main.activeConfrenceId?'active':''">
           <img src="images/2.jpg" class="avatar">
           <p class="name">{{c.name}}</p>
           <span class="badge pull-right" ng-show="c.people > 0">{{c.people}}</span>
@@ -156,7 +158,7 @@
     <h3 class="modal-title">写在最后</h3>
   </div>
   <div class="modal-body">
-    展示结束，谢谢您的倾听
+    展示结束，谢谢您的倾听<br/>
     提前祝大家新年快乐，考试顺利！
   </div>
   <div class="modal-footer">

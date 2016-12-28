@@ -1,3 +1,4 @@
+require('tingyun');
 'use strict';
 
 /**
@@ -21,7 +22,7 @@ angular
     "ui.bootstrap",
     "ui.router",
     'ngVideo',
-    "ui.slimscroll"
+    "ngSlimScroll"
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

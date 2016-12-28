@@ -77,7 +77,11 @@ module.exports = function (grunt) {
         protocol: 'https',
         key: grunt.file.read('server.key').toString(),
         cert: grunt.file.read('server.crt').toString(),
-        ca: grunt.file.read('ca.crt').toString()
+        ca: grunt.file.read('ca.crt').toString(),
+        onCreateServer: function(server, connect, options) {
+          require('tingyun');
+          console.log('tingyun loaded?');
+        }
       },
       livereload: {
         options: {

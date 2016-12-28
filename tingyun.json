@@ -1,0 +1,16 @@
+{
+  "agent_log_level": "info",
+  "app_name": [
+    "peerDslApp"
+  ],
+  "licenseKey": "1a50bfdc1d817ceba96e6861195115ac",
+  "host": "redirect.networkbench.com",
+  "port": 443,
+  "ssl": true,
+  "proxy": "",
+  "proxy_host": "",
+  "proxy_port": "",
+  "proxy_user": "",
+  "proxy_pass": "",
+  "audit_mode": false
+}

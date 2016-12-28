@@ -54,16 +54,28 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
         };
         console.log('Error: ' + msg);
       } ;
-      /*if ($localStorage.peerId) {
-        vm.peerObj = new Peer($localStorage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
-      } else {*/
+       //console.log('iddddddd', $scope.$storage.peerId);
+      if ($scope.$storage.peerId) {
+        vm.peerObj = new Peer($scope.$storage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
+      } else {
         vm.peerObj = new Peer({host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
+        
+       }
         $timeout(function() {
+console.log('lhzjw',vm.peerObj);
           vm.peerId = vm.peerObj.id;
-          vm.peerName = vm.peerId;
-          vm.changeName();
+console.log(vm.peerName);
+console.log(vm.peerId);
+          vm.peerName = vm.peerObj.id;
+           $scope.$storage.peerId = vm.peerObj.id;
+         vm.changeName();
+        //console.log('idddsaved', $scope.$storage.peerId);
+          
         });
-      //}
+/*$timeout(function() {
+
+},100);*/
+      
       vm.activePeerList = [];
       console.log('create peer ok');
       vm.serverConn = vm.peerObj.connect('iamserver');
@@ -81,7 +93,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
           var thisPeer = _.find(vm.activePeerList, function(p) {return p.id == conn.peer});
           if (data.type == 'video') {
             var requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
-            requestFileSystem(window.TEMPORARY, 500*1024*1024 /*500MB*/, function(fs) {
+            requestFileSystem(window.TEMPORARY, 1000*1024*1024 /*500MB*/, function(fs) {
               console.log(fs);
               fs.root.getFile(data.timestamp + data.name, {create: true}, function(fileEntry) {
                 fileEntry.createWriter(function(fileWriter) {
@@ -165,9 +177,11 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
             });
           });
       });
+      vm.initConference();
       vm.getMyVideoStream();
+      
     };
-    vm.init();
+    
     vm.requestCall = function(call) {
       var modalInstance = $uibModal.open({
         size: 'lg',
@@ -186,7 +200,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       var modalInstance = $uibModal.open({
         size: 'lg',
         templateUrl: 'blessModalContent.html',
-        controller: 'blessCallModalCtrl',
+        controller: 'blessModalCtrl',
         controllerAs: 'vm'
       });
     };
@@ -204,6 +218,8 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
             ]
           };
           vm.activeCall = call;
+          vm.activePeer = _.find(vm.activePeerList, function(o) { return o.id == call.peer;});
+          vm.connectPeer(call.peer);
         });
       });
       call.on('close', function() {
@@ -241,10 +257,11 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       $timeout(function() {
         switch (data.type) {
           case 'peerList':
-            vm.activePeerList = _.concat(data.data, vm.activePeerList);
+            vm.activePeerList = _.uniqBy(_.concat(data.data, vm.activePeerList), 'id');
             break;
           case 'newPeer':
             vm.activePeerList.push(data.data);
+            vm.activePeerList = _.uniqBy(vm.activePeerList, 'id');
             break;
           case 'closePeer':
             _.remove(vm.activePeerList, function (p) {
@@ -259,9 +276,10 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
             break;
           case 'newConference':
             vm.activeConfList.push(data.data);
+            vm.activeConfList = _.uniqBy(vm.activeConfList, 'id');
             break;
           case 'confList':
-            vm.activeConfList = _.concat(data.data, vm.activeConfList);
+            vm.activeConfList = _.uniqBy(_.concat(data.data, vm.activeConfList), 'id');
             break;
           case 'closeConference':
             _.remove(vm.activeConfList, function(c) {
@@ -279,6 +297,9 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
     };
     vm.changeFunction = function(fun) {
       vm.functionList = fun;
+      if (fun == 'conferencing') {
+vm.initConference();
+}
     };
     vm.connectPeer = function(peerId) {
       if (vm.activePeerId == peerId) return;
@@ -333,6 +354,8 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
         vm.worker.postMessage(files);
       };
       reader.readAsArrayBuffer(file);
+      vm.activePeer.message = vm.activePeer.message || [];
+      $timeout(vm.activePeer.message.push({type:'video', sources:[{src:URL.createObjectURL(file),type:'video/mp4'}], source: 'self'}));
     };
     vm.changeVideo = function(m) {
      // console.log('on complete');
@@ -341,7 +364,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       if (m.index < m.length - 1) {
         vm.API.stop();
         //m.sources =  [{src: 'filesystem:https://shiweinan.imwork.net/temporary/output'+(m.index+1)+'.mp4', type:'video/mp4'}];
-        m.sources = vm.videos[m.index+1].sources;
+        //m.sources = vm.videos[m.index+1].sources;
         m.sources = [{src: m.sources[0].src.replace(re, "output" + (m.index + 1) + ".mp4"), type:'video/mp4'}];
         m.index += 1;
         $timeout(vm.API.play.bind(vm.API), 100);
@@ -473,7 +496,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
             vm.startPlay();
             vm.playing = true;
           }
-        });
+        });ConfList
       })
     };
     /*vm.handleCall = function(call) {
@@ -658,25 +681,29 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       vm.activeConfList = [];
       vm.serverConn.send({'type': 'confList'});
     };
-    vm.initConference();
+    
     vm.openConferenceRoom = function() {
       vm.RMConnection.open(vm.peerId, function() {
         vm.serverConn.send({type: 'newConference', id: vm.peerId, name: vm.peerName});
         console.log('getttt', vm.RMConnection.sessionid);
       });
-      vm.activeConfrenceId = id;
+      vm.activeConferenceId = vm.peerId;
+      //vm.openingRoom = true;
     };
     vm.joinConferenceRoom = function(id) {
+      //if (vm.openingRoom) return;
       if (id == vm.peerId) return;
       vm.conferenceVideos = [];
       vm.RMConnection.join(id);
       vm.activeConfrenceId = id;
     };
     vm.closeConferenceRoom = function() {
-      if (vm.activeConfrenceId != vm.peerId) return;
+      if (vm.activeConferenceId != vm.peerId) return;
       vm.serverConn.send({type: 'closeConference', id: vm.peerId, name: vm.peerName});
       vm.activeConfrenceId = null;
-    }
+      vm.conferenceVideos = [];
+    }; 
+    vm.init();
 
 
 

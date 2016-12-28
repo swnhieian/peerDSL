@@ -23,9 +23,11 @@
         </div>
       </div>
       <div class="conferencing" ng-if="main.functionList == 'conferencing'">
-        <button class="btn btn-primary" ng-click="main.openConferenceRoom()">open</button>
-        <button class="btn btn-primary" ng-click="main.exitConferenceRoom()">exit</button>
-        <div ng-repeat="c in main.activeConfList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="p.id == main.activeConfrenceId?'active':''">
+        <div class="confOperation text-center">
+          <button class="btn btn-primary" ng-click="main.openConferenceRoom()">创建</button>
+          <button class="btn btn-primary" ng-show="main.activeConferenceId == main.peerId" ng-click="main.closeConferenceRoom()">结束</button>
+        </div>
+        <div ng-repeat="c in main.activeConfList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="c.id == main.activeConfrenceId?'active':''">
           <img src="images/2.jpg" class="avatar">
           <p class="name">{{c.name}}</p>
           <span class="badge pull-right" ng-show="c.people > 0">{{c.people}}</span>
@@ -46,7 +48,7 @@
             <img class="picture" src="{{m.content}}" ng-if="m.type =='picture'"/>
             <div class="text" ng-if="m.type == 'text'">{{m.content}}</div>
             <div class="onlineVideoContainer" ng-if="m.type == 'video'">
-              <videogular vg-theme="main.onlineVideoConfig.theme" vg-player-ready="main.onlinePlayerReady($API)" vg-update-time="main.onlinePlayerTimeUpdated($currentTime, $duration, m)" vg-complete="main.changeVideo(m)">
+              <videogular vg-theme="main.onlineVideoConfig.theme" vg-player-ready="main.onlinePlayerReady($API)" vg-complete="main.changeVideo(m)">
                 <vg-media vg-src="m.sources"></vg-media>
                 <vg-controls vg-autohide="true">
                   <vg-play-pause-button></vg-play-pause-button>
@@ -92,7 +94,7 @@
           </videogular>
         </div>
 
-        
+
 
 
       </div>
@@ -118,9 +120,9 @@
       </div>
     </div>
     <div class="live-wrapper" ng-if="main.functionList == 'conferencing'">
-        <div ng-repeat="v in main.conferenceVideos">
-          <video src="{{main.trustSrc(v.mediaElement.src)}}" controls="controls" autoplay width="150px" height="150px"></video>
-        </div>
+        <span ng-repeat="v in main.conferenceVideos">
+          <video src="{{main.trustSrc(v.mediaElement.src)}}" controls="controls" autoplay ng-class="v.type=='local'?'localConferenceVideo':'remoteConferenceVideo'"></video>
+        </span>
 
     </div>
   </div>
@@ -149,6 +151,18 @@
   <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="vm.ok()">允许</button>
     <button class="btn btn-warning" type="button" ng-click="vm.cancel()">拒绝</button>
+  </div>
+</script>
+<script type="text/ng-template" id="blessModalContent.html">
+  <div class="modal-header">
+    <h3 class="modal-title">写在最后</h3>
+  </div>
+  <div class="modal-body">
+    展示结束，谢谢您的倾听<br/>
+    提前祝大家新年快乐，考试顺利！
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.ok()">确定</button>
   </div>
 </script>
 
