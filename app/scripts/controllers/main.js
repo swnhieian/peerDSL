@@ -9,7 +9,7 @@
  */
 //angular.module('peerDslApp')
 //  .controller('MainCtrl', function ($scope, $timeout, $sce, Webworker, $localStorage, $uibModal, video) {
-var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibModal, video) {
+var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibModal, video, $interval) {
     var vm = this;
     $scope.$storage = $localStorage;
     vm.getMyVideoStream = function() {
@@ -56,16 +56,14 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
       } ;
        //console.log('iddddddd', $scope.$storage.peerId);
       if ($scope.$storage.peerId) {
-        vm.peerObj = new Peer($scope.$storage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
+
+        vm.peerObj = new Peer($scope.$storage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp', config:{'iceServers':[{url:'turn:li@'+window.location.hostname+':12583',credential:'li'}]}});
       } else {
-        vm.peerObj = new Peer({host: 'shiweinan.imwork.net', port: 10000, path: '/myapp'});
+        vm.peerObj = new Peer({host: 'shiweinan.imwork.net', port: 10000, path: '/myapp', config:{'iceServers':[{url:'turn:li@'+window.location.hostname+':12583',credential:'li'}]}});
         
-       }
+      }
         $timeout(function() {
-console.log('lhzjw',vm.peerObj);
           vm.peerId = vm.peerObj.id;
-console.log(vm.peerName);
-console.log(vm.peerId);
           vm.peerName = vm.peerObj.id;
            $scope.$storage.peerId = vm.peerObj.id;
          vm.changeName();
@@ -293,6 +291,7 @@ console.log(vm.peerId);
             break;
         }
         ;
+        vm.constructPing();
       });
     };
     vm.changeFunction = function(fun) {
@@ -672,9 +671,11 @@ vm.initConference();
       vm.RMConnection.onstreamended = function(event) {
         console.log("RMC end", event);
         $timeout(function() {
-          _.remove(vm.conferenceVideos, function(v) {
+          var kk = _.remove(vm.conferenceVideos, function(v) {
             return v.streamid == event.streamid;
           });
+          console.log(kk);
+          _.forEach(kk, function(pp) { vm.RMConnection.removeStream(pp.streamid); if (pp.stream) pp.stream.stop(); pp=null;});
           console.log('conferenceVideos', vm.conferenceVideos);
         });
       };
@@ -683,17 +684,24 @@ vm.initConference();
     };
     
     vm.openConferenceRoom = function() {
+      vm.activeConferenceId = vm.peerId;
       vm.RMConnection.open(vm.peerId, function() {
         vm.serverConn.send({type: 'newConference', id: vm.peerId, name: vm.peerName});
         console.log('getttt', vm.RMConnection.sessionid);
       });
-      vm.activeConferenceId = vm.peerId;
+      
       //vm.openingRoom = true;
     };
     vm.joinConferenceRoom = function(id) {
       //if (vm.openingRoom) return;
       if (id == vm.peerId) return;
-      vm.conferenceVideos = [];
+      if (vm.conferenceVideos) {
+        _.forEach(vm.conferenceVideos, function(p) {if (p.stream) p.stream.stop();p = null;});
+        vm.conferenceVideos = [];
+      }
+        
+      else
+        vm.conferenceVideos = [];
       vm.RMConnection.join(id);
       vm.activeConfrenceId = id;
     };
@@ -701,9 +709,40 @@ vm.initConference();
       if (vm.activeConferenceId != vm.peerId) return;
       vm.serverConn.send({type: 'closeConference', id: vm.peerId, name: vm.peerName});
       vm.activeConfrenceId = null;
-      vm.conferenceVideos = [];
+      if (vm.conferenceVideos) {
+        _.forEach(vm.conferenceVideos, function(p) {console.log(p);vm.RMConnection.removeStream(p.streamid);if (p.stream) {console.log('qiliaoooooooooooo');p.stream.stop();}p = null;});
+        vm.conferenceVideos = [];
+      }
+      else
+        vm.conferenceVideos = [];
+      vm.RMConnection.closeEntireSession();
+    }; 
+
+    vm.exitConferenceRoom = function() {
+      if (vm.activeConferenceId == vm.peerId) return;
+      //vm.serverConn.send({type: 'closeConference', id: vm.peerId, name: vm.peerName});
+      vm.activeConfrenceId = null;
+      if (vm.conferenceVideos) {
+        _.forEach(vm.conferenceVideos, function(p) {console.log(p);vm.RMConnection.removeStream(p.streamid);if (p.stream) {console.log('qiliaoooooooooooo');p.stream.stop();}p = null;});
+        vm.conferenceVideos = [];
+      }
+      else
+        vm.conferenceVideos = [];
+      vm.RMConnection.closeEntireSession();
     }; 
     vm.init();
+
+    vm.constructPing = function() {
+      _.forEach(vm.activePeerList, function(p) {
+          var conn = vm.peerObj.connect(p.id);
+          var time1 = (new Date()).getTime();
+          conn.on('open', function() {
+            var time2 = (new Date()).getTime();
+            p.status = time2 - time1;
+          });
+      });
+    }
+    $interval(vm.constructPing, 3000);
 
 
 

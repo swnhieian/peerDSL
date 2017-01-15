@@ -79,8 +79,8 @@ module.exports = function (grunt) {
         cert: grunt.file.read('server.crt').toString(),
         ca: grunt.file.read('ca.crt').toString(),
         onCreateServer: function(server, connect, options) {
-          require('tingyun');
-          console.log('tingyun loaded?');
+          //require('tingyun');
+          //console.log('tingyun loaded?');
         }
       },
       livereload: {

@@ -117,11 +117,17 @@ input.search {
 }
 .main .sidebar .list .user-info>p.name {
   display: inline-block;
-  margin:0px 0px 0px 15px;
+  margin:-15px 0px 0px 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   vertical-align: middle;
   max-width: 120px;
+}
+.status {
+  margin-top: -10px;
+  margin-left: 50px;
+  display: block;
+  font-size: xx-small;
 }
 .main .sidebar .list .user-info .badge {
   background-color: #aa0000;

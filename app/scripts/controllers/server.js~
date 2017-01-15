@@ -17,7 +17,7 @@ var ServerCtrl = function($timeout) {
     ];
     var vm = this;
     //vm.peer = new Peer('iamserver', {key: 'ggp79a86cknpnwmi'});
-    vm.peer = new Peer('iamserver', {host: 'shiweinan.imwork.net', port: 10000, path:'/myapp'});
+    vm.peer = new Peer('iamserver', {host: 'shiweinan.imwork.net', port: 10000, path:'/myapp',config:{'iceServers':[{url:'turn:yuan@'+'60.205.170.105'+':12583',credential:'yuan'}]}});
     vm.peerList = [];
     vm.confList = [];
     vm.broadcast = function(data) {
@@ -29,7 +29,7 @@ var ServerCtrl = function($timeout) {
     vm.sendConfList = function(conn) {
       var idList = [];
       for (var i = 0; i < vm.confList.length; i++) {
-        idList.push({id: vm.confList[i].peer, name:vm.confList[i].name});
+        idList.push({id: vm.confList[i].id, name:vm.confList[i].name});
       }
       $timeout(function() {conn.send({type:'confList', data: idList});}, 20);
       console.log('sendconfList',idList);

@@ -20,12 +20,14 @@
           <img src="images/2.jpg" class="avatar">
           <p class="name">{{p.name}}</p>
           <span class="badge pull-right" ng-show="p.unread > 0">{{p.unread}}</span>
+          <span ng-if="p.status" class="status">{{p.status}}ms</span>
         </div>
       </div>
       <div class="conferencing" ng-if="main.functionList == 'conferencing'">
         <div class="confOperation text-center">
           <button class="btn btn-primary" ng-click="main.openConferenceRoom()">创建</button>
           <button class="btn btn-primary" ng-show="main.activeConferenceId == main.peerId" ng-click="main.closeConferenceRoom()">结束</button>
+<button class="btn btn-primary" ng-show="main.activeConferenceId != main.peerId" ng-click="main.exitConferenceRoom()">退出</button>
         </div>
         <div ng-repeat="c in main.activeConfList | filter:main.search:strict" class="user-info" ng-click="main.joinConferenceRoom(c.id)" ng-class="c.id == main.activeConfrenceId?'active':''">
           <img src="images/2.jpg" class="avatar">
