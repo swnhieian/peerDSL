@@ -57,7 +57,7 @@ var MainCtrl = function ($scope, $timeout, $sce, Webworker, $localStorage, $uibM
        //console.log('iddddddd', $scope.$storage.peerId);
       if ($scope.$storage.peerId) {
 
-        vm.peerObj = new Peer($scope.$storage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp', config:{'iceServers':[{url:'turn:li@60.205.170.105:12583',credential:'yuan'}]}});
+        vm.peerObj = new Peer($scope.$storage.peerId, {host: 'shiweinan.imwork.net', port: 10000, path: '/myapp', config:{'iceServers':[{url:'turn:li@'+window.location.hostname+':12583',credential:'li'}]}});
       } else {
         vm.peerObj = new Peer({host: 'shiweinan.imwork.net', port: 10000, path: '/myapp', config:{'iceServers':[{url:'turn:li@'+window.location.hostname+':12583',credential:'li'}]}});
         

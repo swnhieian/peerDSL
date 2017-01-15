@@ -738,6 +738,8 @@ vm.initConference();
           var time1 = (new Date()).getTime();
           conn.on('open', function() {
             var time2 = (new Date()).getTime();
+	  conn.close();
+	
             p.status = time2 - time1;
           });
       });
